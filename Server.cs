@@ -22,7 +22,7 @@
 
             if (type == "local") return;
 
-            if (type != "cheater" && type != "both" && type != "local")
+            if (type != "cheats" && type != "both" && type != "local")
             {
                 Log.Warn("[ReportIntegration] There's an error in your config. Solution: just delete all settings related to the plugin.");
                 return;
@@ -39,9 +39,9 @@
             string type = ReportIntegration.Instance.Config.Type;
             string url = ReportIntegration.Instance.Config.WebHookUrl;
 
-            if (type == "cheater") return;
+            if (type == "cheats") return;
 
-            if (type != "cheater" && type != "both" && type != "local")
+            if (type != "cheats" && type != "both" && type != "local")
             {
                 Log.Warn("[ReportIntegration] There's an error in your config. Solution: just delete all settings related to the plugin.");
                 return;
