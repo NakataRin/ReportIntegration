@@ -24,6 +24,8 @@ namespace ReportIntegration
         {
             base.OnEnabled();
 
+            if (!Config.IsEnabled) return;
+
             RegisterEvents();
         }
 
